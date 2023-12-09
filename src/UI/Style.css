@@ -94,6 +94,14 @@ body {
    padding: 0 0 350px 0;
   }
 
+  #heeader h1 {
+    font-size: 12px;
+  }
+
+  #heeader p {
+    font-size: 10px;
+  }
+
   #wwd-text h1,
   #wwd-text p {
    text-align: center;
