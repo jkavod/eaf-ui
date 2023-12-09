@@ -1,0 +1,105 @@
+.bckgrnd {
+ background-color: rgba(0, 0, 0, 1);
+}
+
+
+body {
+ overflow-x: hidden;
+}
+
+
+@keyframes scroll {
+ 0% {
+   transform: translateX(0);
+ }
+ 100% {
+   transform: translateX(calc(-200px * 2));
+ }
+}
+
+.slider {
+ background: white;
+ box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+ height: 150px;
+ margin: auto;
+ overflow: hidden;
+ position: relative;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.slider::before,
+.slider::after {
+ background: linear-gradient(to right, 0%, rgba(255, 255, 255, 0) 100%);
+ content: "";
+ height: 100px;
+ position: absolute;
+ width: 200px;
+ z-index: 2;
+}
+
+.slider::after {
+ right: 20px;
+ top: 0;
+ transform: rotateZ(90deg);
+}
+
+.slider::before {
+ left: 0;
+ top: 0;
+}
+
+.slider .slide-track {
+ animation: scroll 10s linear infinite;
+ display: flex;
+ width: calc(200px * 10);
+}
+
+.slider .slide {
+ height: 100px;
+ width: 250px;
+}
+
+
+.slide img {
+  height: 100px;
+  width: 100px; 
+  object-fit: cover;
+  object-position: center; 
+  padding: 20px;
+}
+
+
+@media (max-width: 740px) {
+  #carousel {
+    height: 60vh;
+  }
+
+  #header-id h1 {
+    font-size: 16px;
+  }
+
+  #header-id p {
+    font-size: 12px;
+  }
+
+  #sm-scr {
+    padding: 100px 10px;
+    text-align: center;
+  }
+
+  #heeader {
+   padding: 0 0 350px 0;
+  }
+
+  #wwd-text h1,
+  #wwd-text p {
+   text-align: center;
+  }
+
+  #about {
+   text-align: center;
+  }
+}
