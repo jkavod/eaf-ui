@@ -573,7 +573,7 @@ export default function Body() {
                     <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl capitalize text-center">
                       Let us know how we may be of assistance
                     </h3>
-                    <form>
+                    <form action="mailto:info@emekaamadifoundation.org" method="post" enctype="text/plain">
                       <div className="mb-1 sm:mb-2">
                         <label
                           htmlFor="firstName"
