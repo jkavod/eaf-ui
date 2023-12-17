@@ -1,17 +1,26 @@
 import React, { useState } from "react";
 import {
+  GenderEquality,
+  Health,
   ImgA,
   ImgB,
   ImgC,
   ImgCC,
+  ImgD,
+  ImgE,
   ImgF,
   ImgG,
   ImgI,
+  ImgJ,
   ImgL,
   ImgM,
   ImgP,
   ImgT,
   ImgY,
+  LessPriviledge,
+  SkillSet,
+  Sports,
+  YouthsVocation,
 } from "../Assets";
 import "../UI/Style.css";
 import { Link } from "react-router-dom";
@@ -44,7 +53,7 @@ export default function Body() {
                   <div className="relative">
                     <img
                       className="object-cover w-full h-96 rounded-t lg:h-[100vh]"
-                      src={ImgB}
+                      src={ImgJ}
                       alt="Education"
                     />
                     <div className="absolute inset-0 bg-gray-800 bg-opacity-25" />
@@ -52,23 +61,11 @@ export default function Body() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-4">
-              <p className="max-w-7xl mb-4 text-base text-gray-700 sm:mx-auto">
-                Emeka Amadi, the CEO of the Foundation, is an ex-international
-                footballer and a current CAF instructor.
-              </p>
-              <p className="max-w-7xl mb-4 text-base text-gray-700 sm:mx-auto">
-                Together with an executive team, he is passionate about helping
-                the less privileged through sports and youth development. In
-                2023, he recieved the MFR award from ex-President Goodluck
-                Johnathan for his outstanding contribution to humanity.
-              </p>
-            </div>
           </div>
         </div>
 
         {/* Goals and Objectives */}
-        <div className="bg-white py-10">
+        {/* <div className="bg-white py-10">
           <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl px-10 md:mb-12">
             <h2 className="max-w-4xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-2xl md:mx-auto uppercase">
               Aims and objectives of emeka amadi foundation
@@ -175,6 +172,155 @@ export default function Body() {
                 <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
               </div>
             </div>
+          </div>
+        </div> */}
+
+        {/* G and O */}
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+              <span className="relative inline-block">
+                <svg
+                  viewBox="0 0 52 24"
+                  fill="currentColor"
+                  className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                >
+                  <defs>
+                    <pattern
+                      id="7b568941-9ed0-4f49-85a0-5e21ca6c7ad6"
+                      x="0"
+                      y="0"
+                      width=".135"
+                      height=".30"
+                    >
+                      <circle cx="1" cy="1" r=".7" />
+                    </pattern>
+                  </defs>
+                  <rect
+                    fill="url(#7b568941-9ed0-4f49-85a0-5e21ca6c7ad6)"
+                    width="52"
+                    height="24"
+                  />
+                </svg>
+                <span className="relative uppercase">
+                  Aims and objectives of emeka amadi foundation
+                </span>
+              </span>{" "}
+            </h2>
+            <p className="text-base text-gray-700 md:text-lg">
+              The Theme of the Foundation is Eradication of poverty through
+              Sports, Agriculture and Education.
+            </p>
+          </div>
+          <div className="grid gap-5 row-gap-5 mb-8 lg:grid-cols-3 sm:grid-cols-2">
+            <a
+              aria-label="View Item"
+              className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <img src={Sports} alt="Sports, Agriculture and Education" />
+                <div className="flex-grow border border-t-0 rounded-b">
+                  <div className="p-5">
+                    <h6 className="mb-2 font-semibold leading-5">
+                      Sports || Agriculture || Education
+                    </h6>
+                    <p className="text-sm text-gray-900">
+                      To eradicate poverty through sports, agriculture and
+                      education
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              aria-label="View Item"
+              className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <img src={LessPriviledge} alt="Less Privileged" />
+                <div className="flex-grow border border-t-0 rounded-b">
+                  <div className="p-5">
+                    <h6 className="mb-2 font-semibold leading-5">
+                      Less Privileged
+                    </h6>
+                    <p className="text-sm text-gray-900">
+                      To cater for the less privileged in our society
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              aria-label="View Item"
+              className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <img src={YouthsVocation} alt="Youths Vocation" />
+                <div className="flex-grow border border-t-0 rounded-b">
+                  <div className="p-5">
+                    <h6 className="mb-2 font-semibold leading-5">
+                      Youths Vocation
+                    </h6>
+                    <p className="text-sm text-gray-900">
+                      To encourage the youths to take up a vocation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              aria-label="View Item"
+              className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <img src={SkillSet} alt="Skillsets" />
+                <div className="flex-grow border border-t-0 rounded-b">
+                  <div className="p-5">
+                    <h6 className="mb-2 font-semibold leading-5">Skillsets</h6>
+                    <p className="text-sm text-gray-900">
+                      To identify talents and upgrade their skills in their
+                      chosen vocation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              aria-label="View Item"
+              className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <img src={GenderEquality} alt="Gender Equality" />
+                <div className="flex-grow border border-t-0 rounded-b">
+                  <div className="p-5">
+                    <h6 className="mb-2 font-semibold leading-5">
+                      Gender Equality
+                    </h6>
+                    <p className="text-sm text-gray-900">
+                      To encourage gender equality in any vocation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              aria-label="View Item"
+              className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <img src={Health} alt="Health Advice" />
+                <div className="flex-grow border border-t-0 rounded-b">
+                  <div className="p-5">
+                    <h6 className="mb-2 font-semibold leading-5">
+                      Health Advice
+                    </h6>
+                    <p className="text-sm text-gray-900">
+                      to encourage the youth to take care of their health
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -299,11 +445,14 @@ export default function Body() {
         </div>
 
         {/* What we do Section */}
-        <div className="flex flex-col gap-5 mt-20" id="whatwedo">
-          <div className="flex justify-center items-center">
-            <h1 className="font-bold text-4xl text-center uppercase">
-              What we do
-            </h1>
+        <div className="flex flex-col gap-2 mt-20" id="whatwedo">
+          <div className="max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-2xl md:mx-auto uppercase">
+              What We Do
+            </h2>
+            <p className="text-base text-gray-700 md:text-lg">
+            At Emeka Amadi Foundation, we engage in various initiatives focused on empowering communities and supporting meaningful change.
+            </p>
           </div>
           <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="grid max-w-screen-lg gap-8 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-2">
@@ -454,8 +603,8 @@ export default function Body() {
               <p className="max-w-[1030px] mb-4 text-base lg:text-justify text-gray-700 sm:mx-auto">
                 Coach EMEKA is a CAF ( Conferderation of African Football)
                 Instructor and the first Head of Goalkeeping department in
-                Nigeria Football Federation. Additionally, he is a social
-                worker, head of Kindergarten and Daycare in Germany. 
+                Nigeria Football Federation. Additionally, he is a social worker
+                in Germany. 
               </p>
               <p className="max-w-[1030px] mb-4 text-base lg:text-justify text-gray-700 sm:mx-auto">
                 He also worked as a football coach in Sudan, Germany,Tanzania
@@ -469,76 +618,78 @@ export default function Body() {
             </div>
           </div>
 
-           {/* Mentions */}
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-[1100px] md:px-24 lg:px-8 lg:py-20">
-          <div className="grid max-w-screen-lg gap-8 row-gap-6 sm:mx-auto lg:grid-cols-2">
-            <a
-              href="https://www.cz.de/Sport/Fussball-regional/Toni-Amadi-Vom-Kult-Keeper-in-Celle-zum-Weltmeister-in-Nigeria"
-              aria-label="View item"
-              title="View item"
-              className="relative block p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl"
-            >
-              <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-              <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
-              <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-              <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
-              <div className="relative flex items-center justify-between p-5 bg-white rounded-sm">
-                <div className="pr-4">
-                  <h6 className="mb-2 font-semibold leading-5">
-                    Toni Amadi: From Goal keeper in Celle to world champion in
-                    Nigeria
-                  </h6>
-                  <p className="text-sm text-gray-900">
-                    He was the crowd favorite during the glorious regional
-                    league times at TuS Celle FC: Toni Amadi, who became a cult
-                    keeper.. <span className="text-mainColor">Read More</span>
-                  </p>
+          {/* Mentions */}
+          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-[1100px] md:px-24 lg:px-8 lg:py-20">
+            <div className="grid max-w-screen-lg gap-8 row-gap-6 sm:mx-auto lg:grid-cols-2">
+              <a
+                href="https://www.cz.de/Sport/Fussball-regional/Toni-Amadi-Vom-Kult-Keeper-in-Celle-zum-Weltmeister-in-Nigeria"
+                aria-label="View item"
+                title="View item"
+                className="relative block p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl"
+              >
+                <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+                <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
+                <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+                <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
+                <div className="relative flex items-center justify-between p-5 bg-white rounded-sm">
+                  <div className="pr-4">
+                    <h6 className="mb-2 font-semibold leading-5">
+                      Toni Amadi: From Goal keeper in Celle to world champion in
+                      Nigeria
+                    </h6>
+                    <p className="text-sm text-gray-900">
+                      He was the crowd favorite during the glorious regional
+                      league times at TuS Celle FC: Toni Amadi, who became a
+                      cult keeper..{" "}
+                      <span className="text-mainColor">Read More</span>
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <svg
+                      className="w-3 text-gray-700 transition-colors duration-300 group-hover:text-deep-purple-accent-400"
+                      fill="currentColor"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                    </svg>
+                  </div>
                 </div>
-                <div className="flex items-center justify-center">
-                  <svg
-                    className="w-3 text-gray-700 transition-colors duration-300 group-hover:text-deep-purple-accent-400"
-                    fill="currentColor"
-                    viewBox="0 0 12 12"
-                  >
-                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                  </svg>
+              </a>
+              <a
+                href="https://www.cz.de/Sport/Fussball-regional/Toni-Amadi-foerdert-Strassenkinder"
+                aria-label="View item"
+                title="View item"
+                className="relative block p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl"
+              >
+                <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+                <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
+                <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+                <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
+                <div className="relative flex items-center justify-between p-5 bg-white rounded-sm">
+                  <div className="pr-4">
+                    <h6 className="mb-2 font-semibold leading-5">
+                      Toni Amadi supports street children
+                    </h6>
+                    <p className="text-sm text-gray-900">
+                      Toni Amadi, former goalkeeper at TuS Celle FC, is fighting
+                      to get children and young people off the streets in
+                      Nigeria and to protect them from crime...
+                      <span className="text-mainColor">Read More</span>
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <svg
+                      className="w-3 text-gray-700 transition-colors duration-300 group-hover:text-deep-purple-accent-400"
+                      fill="currentColor"
+                      viewBox="0 0 12 12"
+                    >
+                      <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                    </svg>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a
-              href="https://www.cz.de/Sport/Fussball-regional/Toni-Amadi-foerdert-Strassenkinder"
-              aria-label="View item"
-              title="View item"
-              className="relative block p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl"
-            >
-              <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-              <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
-              <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-              <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
-              <div className="relative flex items-center justify-between p-5 bg-white rounded-sm">
-                <div className="pr-4">
-                  <h6 className="mb-2 font-semibold leading-5">
-                    Toni Amadi supports street children
-                  </h6>
-                  <p className="text-sm text-gray-900">
-                    Toni Amadi, former goalkeeper at TuS Celle FC, is fighting
-                    to get children and young people off the streets in Nigeria
-                    and to protect them from crime...<span className="text-mainColor">Read More</span>
-                  </p>
-                </div>
-                <div className="flex items-center justify-center">
-                  <svg
-                    className="w-3 text-gray-700 transition-colors duration-300 group-hover:text-deep-purple-accent-400"
-                    fill="currentColor"
-                    viewBox="0 0 12 12"
-                  >
-                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                  </svg>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
         </div>
 
         {/* Contact Us */}
@@ -573,7 +724,11 @@ export default function Body() {
                     <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl capitalize text-center">
                       Let us know how we may be of assistance
                     </h3>
-                    <form action="mailto:info@emekaamadifoundation.org" method="post" enctype="text/plain">
+                    <form
+                      action="mailto:info@emekaamadifoundation.org"
+                      method="post"
+                      enctype="text/plain"
+                    >
                       <div className="mb-1 sm:mb-2">
                         <label
                           htmlFor="firstName"

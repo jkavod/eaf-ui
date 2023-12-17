@@ -44,12 +44,12 @@ export default function Header() {
                     >
                       Donate
                     </a>
-                    <a
+                    {/* <a
                       href="#"
                       className="text-sm font-semibold leading-6 text-mainColor"
                     >
                       Read more <span aria-hidden="true">→</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
