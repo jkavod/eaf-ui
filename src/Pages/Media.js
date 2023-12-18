@@ -26,7 +26,7 @@ export default function Media() {
                       <h1 className="text-3xl font-bold tracking-tight text-mainColor sm:text-6xl">
                         Our Gallery Section
                       </h1>
-                      <div className="flex justify-center items-center gap-10 text-black">
+                      <div className="flex justify-center items-center gap-10 text-black px-5">
                         <Link to={"/images"} className="bg-mainColor px-16 py-5">Images</Link>
                         <Link to={"/videos"} className="bg-mainColor px-16 py-5">Videos</Link>
                       </div>

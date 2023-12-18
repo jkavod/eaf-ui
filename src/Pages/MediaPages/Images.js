@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, ScrollButton } from "../../Constants";
-import { ImgA, ImgB, ImgC, ImgD, ImgE, ImgF, ImgG, ImgH, ImgI, ImgJ, ImgK, ImgL, ImgM } from "../../Assets";
+import { ImgA, ImgAA, ImgB, ImgBB, ImgC, ImgCCC, ImgD, ImgDD, ImgE, ImgF, ImgG, ImgH, ImgI, ImgJ, ImgK, ImgL, ImgM } from "../../Assets";
 import { Footer } from "../../UI";
 
 export default function Images() {
@@ -108,6 +108,34 @@ export default function Images() {
             <img
               className="h-auto max-w-full rounded-lg"
               src={ImgM}
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src={ImgAA}
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src={ImgBB}
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src={ImgCCC}
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src={ImgDD}
               alt=""
             />
           </div>

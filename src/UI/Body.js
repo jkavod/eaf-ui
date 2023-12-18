@@ -41,7 +41,7 @@ export default function Body() {
                 About Us
               </h2>
               <p className="text-base text-gray-700 md:text-lg">
-                Emeka Amadi Foundation (EAF) is a reputable indigenous non-for
+                Emeka Amadi Foundation (EAF) is a reputable indigenous not-for
                 profit organization that promotes access to quality health care
                 and the eradication of poverty through Sports, Agriculture and
                 Education.
@@ -308,11 +308,11 @@ export default function Body() {
               className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
             >
               <div className="flex flex-col h-full">
-                <img src={Health} alt="Health Advice" />
+                <img src={Health} alt="Health Workshop" />
                 <div className="flex-grow border border-t-0 rounded-b">
                   <div className="p-5">
                     <h6 className="mb-2 font-semibold leading-5">
-                      Health Advice
+                      Health Workshop
                     </h6>
                     <p className="text-sm text-gray-900">
                       to encourage the youth to take care of their health
@@ -446,7 +446,7 @@ export default function Body() {
 
         {/* What we do Section */}
         <div className="flex flex-col gap-2 mt-20" id="whatwedo">
-          <div className="max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <div className="max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 px-5">
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-2xl md:mx-auto uppercase">
               What We Do
             </h2>
