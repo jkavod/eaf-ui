@@ -16,7 +16,7 @@ export default function Media() {
             <Carousel />
             <div className="absolute flex justify-center items-center left-0 top-20 w-[100%] h-[100%] text-whiteShade font-bold">
               <div>
-                <div className="relative isolate px-6 lg:px-8">
+                <div className="relative isolate lg:px-8">
                   <div
                     className="mx-auto max-w-7xl py-80 lg:py-96"
                     id="heeader"
